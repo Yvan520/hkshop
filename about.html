@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Meet your personal product hunter in China. Based in Hong Kong, sourcing the most curious products from Yiwu, Guangzhou, and Shenzhen.">
+<title>About &mdash; Curiohunt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="nav" data-active="about"></nav>
+
+<a href="https://wa.me/85212345678?text=Hi%20I%20saw%20Curiohunt" class="float-wa" target="_blank" aria-label="WhatsApp">
+  &#128172;
+  <span class="wa-tooltip">Chat with me</span>
+</a>
+
+<!-- COSMIC -->
+<section class="cosmic-section" id="process" style="padding-top:calc(var(--nav-h) + 48px)">
+  <div class="starfield" id="starfield"></div>
+  <div class="shooting-star" style="top:15%;left:10%"></div>
+  <div class="shooting-star" style="top:40%;left:70%"></div>
+  <div class="nebula nebula-1"></div>
+  <div class="nebula nebula-2"></div>
+  <div class="section-inner">
+    <div class="section-label" data-key="cosmic.label">The journey</div>
+    <h2>From <em>curiosity</em> to doorstep</h2>
+    <div class="cosmic-track" id="cosmicTrack"></div>
+  </div>
+</section>
+
+<!-- HUNTER -->
+<section class="hunter-section" id="hunter">
+  <div class="section-inner">
+    <div class="section-label" data-key="hunter.label">Behind the finds</div>
+    <div class="hunter-grid">
+      <div class="hunter-visual-wrap">
+        <div class="hunter-avatar">&#128518;&#65039;</div>
+        <div class="hunter-avatar-deco"></div>
+      </div>
+      <div class="hunter-info">
+        <h3 data-key="hunter.name">Meet your hunter</h3>
+        <span class="hunter-role" data-key="hunter.role">China product scout &middot; Based in Hong Kong</span>
+        <p data-key="hunter.bio1">I spend my days in Yiwu&rsquo;s wholesale maze, Guangzhou&rsquo;s factory alley, and Shenzhen&rsquo;s electronics markets, hunting for the most curious, unique, and well-made products China has to offer.</p>
+        <p data-key="hunter.bio2">My rule is simple: I never list a product I haven&rsquo;t personally touched, tested, and approved. The packing video is my promise to you &mdash; what you see is exactly what you get.</p>
+        <div class="hunter-stats">
+          <div class="hunter-stat"><strong data-key="hunter.s1v">5+</strong><span data-key="hunter.s1l">Years sourcing</span></div>
+          <div class="hunter-stat"><strong data-key="hunter.s2v">30+</strong><span data-key="hunter.s2l">Suppliers vetted</span></div>
+          <div class="hunter-stat"><strong data-key="hunter.s3v">Early</strong><span data-key="hunter.s3l">Building client trust</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EARLY BIRD -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label" data-key="early.label">Be the first</div>
+    <h2>Help shape <em>this service</em></h2>
+    <p class="section-desc" data-key="early.desc">I&rsquo;m launching to my first clients. Your feedback will define how this works for everyone who comes after.</p>
+    <div class="early-grid" id="earlyGrid"></div>
+  </div>
+</section>
+
+<!-- DISPATCH -->
+<section class="dispatch-section" id="dispatch">
+  <div class="section-inner">
+    <div class="section-label" data-key="dispatch.label">Field notes</div>
+    <h2>Behind the <em>scenes</em></h2>
+    <p class="section-desc" data-key="dispatch.desc">Notes from the market &mdash; real updates from my next sourcing trip.</p>
+    <div class="dispatch-soon">
+      <span class="ds-icon">&#128240;</span>
+      <h4 data-key="dispatch.soonTitle">First field note coming soon</h4>
+      <p data-key="dispatch.soonDesc">I&rsquo;m planning my next sourcing trip to Yiwu. Real photos, real findings &mdash; no stock content.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="footer"></footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay"></div>
+<div class="modal" id="modal">
+  <div class="modal-header">
+    <span style="font-size:0.78rem;color:var(--text-tertiary);font-weight:500" id="modalBreadcrumb">Product detail</span>
+    <button class="modal-close" id="modalClose">&times;</button>
+  </div>
+  <div class="modal-body" id="modalBody"></div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+renderCosmic();
+renderEarlyBird();
+</script>
+</body>
+</html>
