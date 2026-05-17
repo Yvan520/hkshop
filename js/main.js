@@ -70,8 +70,10 @@ function buildStars(){
 function renderFeatured(){
   var fh=document.getElementById('featuredHero');
   if(!fh)return;
+  var fs=document.getElementById('featured');
   var fp=products.filter(function(p){return p.featured;});
-  if(!fp.length)return;
+  if(!fp.length){if(fs)fs.style.display='none';return;}
+  if(fs)fs.style.display='';
   var p=fp[0];
   fh.innerHTML =
     '<div class="featured-visual"><span class="sticker">'+T({en:'Featured Pick',zh:'\u7f16\u8f91\u7cbe\u9009'})+'</span><img src="'+p.thumbs[0]+'" alt="'+T(p.title)+'" loading="lazy"></div>'+
