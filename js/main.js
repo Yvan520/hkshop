@@ -228,14 +228,19 @@ function initScrollFade(){
 function refreshUI(){
   var navEl=document.getElementById('nav');
   var footerEl=document.getElementById('footer');
+  var activePage='index';
   if(navEl){
-    var activePage=navEl.getAttribute('data-active')||'index';
+    activePage=navEl.getAttribute('data-active')||'index';
     navEl.innerHTML=buildNav(activePage);
   }
   if(footerEl)footerEl.innerHTML=buildFooter();
   applyTranslations();
   attachLangToggle();
   document.documentElement.lang=(lang==='zh'?'zh-HK':'en');
+  if(activePage==='index')renderFeatured();
+  else if(activePage==='products')renderProducts();
+  else if(activePage==='about'){renderCosmic();renderEarlyBird();}
+  else if(activePage==='pricing'){renderPricing();renderFAQ();}
 }
 
 /* ===== ATTACH LANG TOGGLE ===== */
