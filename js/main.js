@@ -222,6 +222,33 @@ function initScrollFade(){
   document.querySelectorAll('.fade-in').forEach(function(el){obs.observe(el);});
 }
 
+/* ===== REFRESH UI ===== */
+function refreshUI(){
+  var navEl=document.getElementById('nav');
+  var footerEl=document.getElementById('footer');
+  if(navEl){
+    var activePage=navEl.getAttribute('data-active')||'index';
+    navEl.innerHTML=buildNav(activePage);
+  }
+  if(footerEl)footerEl.innerHTML=buildFooter();
+  applyTranslations();
+  attachLangToggle();
+  document.documentElement.lang=(lang==='zh'?'zh-HK':'en');
+}
+
+/* ===== ATTACH LANG TOGGLE ===== */
+function attachLangToggle(){
+  var lt=document.getElementById('langToggle');
+  if(!lt)return;
+  lt.removeEventListener('click',onLangToggle);
+  lt.addEventListener('click',onLangToggle);
+}
+function onLangToggle(){
+  lang=(lang==='en'?'zh':'en');
+  localStorage.setItem('curiohunt-lang',lang);
+  refreshUI();
+}
+
 /* ===== INIT ===== */
 document.addEventListener('DOMContentLoaded',function(){
   var navEl=document.getElementById('nav');
@@ -234,21 +261,12 @@ document.addEventListener('DOMContentLoaded',function(){
   buildStars();
   applyTranslations();
   initScrollFade();
+  attachLangToggle();
 
   /* Nav scroll shadow */
   var nv=document.getElementById('nav');
   if(nv){
     window.addEventListener('scroll',function(){nv.classList.toggle('scrolled',window.scrollY>60);});
-  }
-
-  /* Lang toggle */
-  var lt=document.getElementById('langToggle');
-  if(lt){
-    lt.addEventListener('click',function(){
-      lang=(lang==='en'?'zh':'en');
-      localStorage.setItem('curiohunt-lang',lang);
-      location.reload();
-    });
   }
 
   /* Modal events */
