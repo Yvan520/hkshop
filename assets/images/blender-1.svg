@@ -1,0 +1,102 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#faf7f2"/>
+    </radialGradient>
+    <linearGradient id="cupGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f4f8" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#e0e8f0" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#d0dce8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#c0d0e0" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="cupHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.4"/>
+      <stop offset="20%" stop-color="white" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sleeveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4088cc"/>
+      <stop offset="50%" stop-color="#3070b0"/>
+      <stop offset="100%" stop-color="#205890"/>
+    </linearGradient>
+    <linearGradient id="sleeveHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a8e8" stop-opacity="0.3"/>
+      <stop offset="30%" stop-color="white" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="baseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a4a4a"/>
+      <stop offset="40%" stop-color="#3a3a3a"/>
+      <stop offset="100%" stop-color="#222222"/>
+    </linearGradient>
+    <linearGradient id="bladeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d0d0d0"/>
+      <stop offset="50%" stop-color="#a0a0a0"/>
+      <stop offset="100%" stop-color="#808080"/>
+    </linearGradient>
+    <linearGradient id="lidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8e8e8"/>
+      <stop offset="50%" stop-color="#d0d0d0"/>
+      <stop offset="100%" stop-color="#b8b8b8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+
+  <ellipse cx="400" cy="530" rx="120" ry="14" fill="#00000015"/>
+
+  <rect x="340" y="155" width="120" height="280" rx="18" fill="url(#cupGrad)" filter="url(#shadow)"/>
+  <rect x="345" y="160" width="115" height="270" rx="15" fill="url(#cupHighlight)"/>
+
+  <rect x="340" y="155" width="120" height="280" rx="18" fill="none" stroke="#c0d0e0" stroke-width="1" opacity="0.5"/>
+
+  <rect x="340" y="340" width="120" height="95" rx="10" fill="url(#sleeveGrad)"/>
+  <rect x="340" y="340" width="120" height="95" rx="10" fill="url(#sleeveHighlight)"/>
+
+  <text x="400" y="380" text-anchor="middle" font-family="sans-serif" font-size="9" fill="white" opacity="0.4" letter-spacing="3">450ml</text>
+
+  <line x1="350" y1="395" x2="450" y2="395" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="350" y1="405" x2="450" y2="405" stroke="white" stroke-width="0.5" opacity="0.15"/>
+
+  <rect x="340" y="435" width="120" height="40" rx="8" fill="url(#baseGrad)"/>
+  <rect x="345" y="438" width="110" height="8" rx="3" fill="#555" opacity="0.3"/>
+
+  <rect x="430" y="448" width="20" height="5" rx="2" fill="#888"/>
+
+  <rect x="345" y="455" width="110" height="8" rx="3" fill="#222"/>
+
+  <ellipse cx="400" cy="435" rx="45" ry="5" fill="#1a1a1a"/>
+
+  <path d="M 385 435 L 380 445 L 390 445 Z" fill="url(#bladeGrad)"/>
+  <path d="M 415 435 L 420 445 L 410 445 Z" fill="url(#bladeGrad)"/>
+
+  <rect x="375" y="175" width="50" height="50" rx="10" fill="url(#cupGrad)" opacity="0.5"/>
+
+  <rect x="365" y="190" width="8" height="8" rx="2" fill="#e05050" opacity="0.6"/>
+  <rect x="385" y="190" width="8" height="8" rx="2" fill="#e05050" opacity="0.5"/>
+  <rect x="395" y="200" width="6" height="6" rx="2" fill="#e05050" opacity="0.4"/>
+  <rect x="375" y="210" width="7" height="7" rx="2" fill="#e05050" opacity="0.3"/>
+
+  <circle cx="390" cy="185" r="5" fill="white" opacity="0.3"/>
+  <circle cx="405" cy="195" r="4" fill="white" opacity="0.25"/>
+  <circle cx="380" cy="200" r="3" fill="white" opacity="0.2"/>
+
+  <rect x="355" y="155" width="90" height="10" rx="5" fill="url(#lidGrad)"/>
+  <rect x="370" y="148" width="60" height="12" rx="4" fill="url(#lidGrad)"/>
+  <rect x="390" y="140" width="20" height="14" rx="5" fill="url(#lidGrad)"/>
+  <rect x="395" y="135" width="10" height="8" rx="3" fill="#c0c0c0"/>
+
+  <rect x="355" y="155" width="90" height="4" rx="2" fill="white" opacity="0.2"/>
+
+  <text x="400" y="575" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#888" opacity="0.6">Portable Blender &middot; 450ml</text>
+</svg>

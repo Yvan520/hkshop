@@ -1,0 +1,72 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="45" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#faf7f2"/>
+    </radialGradient>
+    <radialGradient id="moonGrad" cx="40%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#fef5e7"/>
+      <stop offset="30%" stop-color="#f5d6a8"/>
+      <stop offset="70%" stop-color="#e8c488"/>
+      <stop offset="100%" stop-color="#d4a96a"/>
+    </radialGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5c542" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#f5c542" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#f5c542" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="baseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a4a4a"/>
+      <stop offset="100%" stop-color="#2a2a2a"/>
+    </linearGradient>
+    <radialGradient id="craterShade" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c49a60" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#b8894e" stop-opacity="0.1"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+
+  <ellipse cx="400" cy="520" rx="180" ry="18" fill="#00000020"/>
+
+  <circle cx="400" cy="300" r="150" fill="url(#moonGlow)" filter="url(#softGlow)"/>
+
+  <rect x="340" y="435" width="120" height="40" rx="8" fill="url(#baseGrad)" filter="url(#shadow)"/>
+
+  <rect x="350" y="441" width="8" height="4" rx="2" fill="#555"/>
+  <rect x="352" y="447" width="6" height="3" rx="1.5" fill="#555"/>
+
+  <circle cx="400" cy="290" r="130" fill="url(#moonGrad)" filter="url(#glow)"/>
+
+  <ellipse cx="370" cy="270" rx="30" ry="8" fill="url(#craterShade)" opacity="0.5"/>
+  <ellipse cx="420" cy="320" rx="22" ry="6" fill="url(#craterShade)" opacity="0.4"/>
+  <ellipse cx="380" cy="340" rx="15" ry="4" fill="url(#craterShade)" opacity="0.35"/>
+  <ellipse cx="440" cy="250" rx="12" ry="3" fill="url(#craterShade)" opacity="0.3"/>
+  <ellipse cx="350" cy="310" rx="18" ry="5" fill="url(#craterShade)" opacity="0.4"/>
+  <ellipse cx="410" cy="370" rx="10" ry="3" fill="url(#craterShade)" opacity="0.3"/>
+  <ellipse cx="370" cy="230" rx="8" ry="3" fill="url(#craterShade)" opacity="0.25"/>
+  <ellipse cx="450" cy="300" rx="14" ry="4" fill="url(#craterShade)" opacity="0.3"/>
+
+  <circle cx="365" cy="265" r="18" fill="#d4a96a" opacity="0.15"/>
+  <circle cx="425" cy="315" r="14" fill="#d4a96a" opacity="0.12"/>
+  <circle cx="375" cy="335" r="8" fill="#d4a96a" opacity="0.1"/>
+
+  <circle cx="400" cy="290" r="130" fill="none" stroke="#f5d6a8" stroke-width="1" opacity="0.3"/>
+</svg>
