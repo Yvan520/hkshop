@@ -6,20 +6,20 @@ function T(o){return (o&&o[lang])||(o&&o.en)||''}
 /* ===== NAV ===== */
 function buildNav(activePage){
   var links = [
-    {label:{en:'Finds',zh:'\u597d\u7269'},href:'products.html',id:'products'},
-    {label:{en:'Pricing',zh:'\u4ef7\u683c'},href:'pricing.html',id:'pricing'},
-    {label:{en:'About',zh:'\u5173\u4e8e'},href:'about.html',id:'about'},
-    {label:{en:'Blog',zh:'\u6587\u7ae0'},href:'blog/',id:'blog'}
+    {label:{en:'Finds',zh:'\u597d\u7269'},href:'/products.html',id:'products'},
+    {label:{en:'Pricing',zh:'\u4ef7\u683c'},href:'/pricing.html',id:'pricing'},
+    {label:{en:'About',zh:'\u5173\u4e8e'},href:'/about.html',id:'about'},
+    {label:{en:'Blog',zh:'\u6587\u7ae0'},href:'/blog/',id:'blog'}
   ];
   var h = '<div class="nav-inner">' +
-    '<a href="index.html" class="logo"><span class="logo-mark">C</span>Curiohunt</a>' +
+    '<a href="/" class="logo"><span class="logo-mark">C</span>Curiohunt</a>' +
     '<div class="nav-links">';
   for(var i=0;i<links.length;i++){
     var li=links[i];
     var activeClass=(li.id===activePage)?' class="active"':'';
     h+='<a href="'+li.href+'"'+activeClass+'>'+T(li.label)+'</a>';
   }
-  h+='<a href="pricing.html#faq">FAQ</a></div>' +
+  h+='<a href="/pricing.html#faq">FAQ</a></div>' +
     '<div class="nav-actions">' +
     '<button class="lang-btn" id="langToggle">'+(lang==='zh'?'\u4e2d':'EN')+'</button>' +
     '<a href="https://wa.me/85212345678?text=Hi%20I%20saw%20Curiohunt" class="nav-cta">'+T({en:'WhatsApp me',zh:'\u8054\u7cfb\u6211'})+'</a>' +
@@ -32,14 +32,14 @@ function buildFooter(){
   return '<div class="footer-inner">' +
     '<div class="footer-main">' +
     '<div class="footer-brand">' +
-    '<a href="index.html" class="logo" style="margin-bottom:14px;display:inline-flex"><span class="logo-mark">C</span>Curiohunt</a>' +
+    '<a href="/" class="logo" style="margin-bottom:14px;display:inline-flex"><span class="logo-mark">C</span>Curiohunt</a>' +
     '<p data-key="footer.brand">'+T({en:'Your personal product hunter. Finding China\'s curious finds, verifying quality, and shipping them from Hong Kong to your door.',zh:'\u4f60\u7684\u79c1\u4eba\u4ea7\u54c1\u730e\u4eba\u3002\u5728\u4e2d\u56fd\u5bfb\u627e\u65b0\u5947\u597d\u7269\uff0c\u68c0\u9a8c\u54c1\u8d28\uff0c\u4ece\u9999\u6e2f\u5bc4\u5230\u4f60\u5bb6\u95e8\u53e3\u3002'})+'</p></div>' +
     '<div class="footer-col"><h4 data-key="footer.nav">'+T({en:'Navigate',zh:'\u5bfc\u822a'})+'</h4>' +
-    '<a href="products.html" data-key="footer.n2">'+T({en:'Finds',zh:'\u597d\u7269'})+'</a>' +
-    '<a href="pricing.html" data-key="footer.n3">'+T({en:'Pricing',zh:'\u4ef7\u683c'})+'</a>' +
-    '<a href="about.html" data-key="footer.n4">'+T({en:'About',zh:'\u5173\u4e8e'})+'</a>' +
-    '<a href="blog/" data-key="footer.n5">'+T({en:'Blog',zh:'\u6587\u7ae0'})+'</a>' +
-    '<a href="pricing.html#faq">FAQ</a></div>' +
+    '<a href="/products.html" data-key="footer.n2">'+T({en:'Finds',zh:'\u597d\u7269'})+'</a>' +
+    '<a href="/pricing.html" data-key="footer.n3">'+T({en:'Pricing',zh:'\u4ef7\u683c'})+'</a>' +
+    '<a href="/about.html" data-key="footer.n4">'+T({en:'About',zh:'\u5173\u4e8e'})+'</a>' +
+    '<a href="/blog/" data-key="footer.n5">'+T({en:'Blog',zh:'\u6587\u7ae0'})+'</a>' +
+    '<a href="/pricing.html#faq">FAQ</a></div>' +
     '<div class="footer-col"><h4 data-key="footer.connect">'+T({en:'Connect',zh:'\u8054\u7cfb'})+'</h4>' +
     '<a href="https://wa.me/85212345678?text=Hi%20from%20Curiohunt%20footer">WhatsApp</a>' +
     '<a href="mailto:hello@curiohunt.com">Email</a></div>' +
