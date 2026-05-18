@@ -38,7 +38,7 @@ function buildFooter(){
     '<a href="products.html" data-key="footer.n2">'+T({en:'Finds',zh:'\u597d\u7269'})+'</a>' +
     '<a href="pricing.html" data-key="footer.n3">'+T({en:'Pricing',zh:'\u4ef7\u683c'})+'</a>' +
     '<a href="about.html" data-key="footer.n4">'+T({en:'About',zh:'\u5173\u4e8e'})+'</a>' +
-    '<a href="blog.html" data-key="footer.n5">'+T({en:'Blog',zh:'\u6587\u7ae0'})+'</a>' +
+    '<a href="blog/" data-key="footer.n5">'+T({en:'Blog',zh:'\u6587\u7ae0'})+'</a>' +
     '<a href="pricing.html#faq">FAQ</a></div>' +
     '<div class="footer-col"><h4 data-key="footer.connect">'+T({en:'Connect',zh:'\u8054\u7cfb'})+'</h4>' +
     '<a href="https://wa.me/85212345678?text=Hi%20from%20Curiohunt%20footer">WhatsApp</a>' +
