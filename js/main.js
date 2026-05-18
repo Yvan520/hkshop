@@ -9,7 +9,7 @@ function buildNav(activePage){
     {label:{en:'Finds',zh:'\u597d\u7269'},href:'products.html',id:'products'},
     {label:{en:'Pricing',zh:'\u4ef7\u683c'},href:'pricing.html',id:'pricing'},
     {label:{en:'About',zh:'\u5173\u4e8e'},href:'about.html',id:'about'},
-    {label:{en:'Blog',zh:'\u6587\u7ae0'},href:'blog.html',id:'blog'}
+    {label:{en:'Blog',zh:'\u6587\u7ae0'},href:'blog/',id:'blog'}
   ];
   var h = '<div class="nav-inner">' +
     '<a href="index.html" class="logo"><span class="logo-mark">C</span>Curiohunt</a>' +
