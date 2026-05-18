@@ -90,7 +90,7 @@ var translations = {
     'cta.title':'Ready to find something curious?','cta.desc':'Send me a photo, link, or just an idea. I\'ll respond within 2 hours.',
     'cta.whatsapp':'Inquire on WhatsApp \u2192','cta.email':'Email me','cta.note':'Your privacy is respected. No spam, ever.',
     'footer.brand':'Your personal product hunter. Finding China\'s curious finds, verifying quality, and shipping them from Hong Kong to your door.',
-    'footer.nav':'Navigate','footer.n2':'Finds','footer.n3':'Pricing','footer.n4':'About',
+    'footer.nav':'Navigate','footer.n2':'Finds','footer.n3':'Pricing','footer.n4':'About','footer.n5':'Blog',
     'footer.connect':'Connect','footer.policies':'Policies',
     'footer.terms':'Terms of Service','footer.refund':'Refund Policy','footer.privacy':'Privacy Policy',
     'footer.copy':'Personal shopping service, Hong Kong.','footer.tagline':'Every product, personally verified.'
@@ -118,7 +118,7 @@ var translations = {
     'cta.title':'\u51c6\u5907\u597d\u5f00\u59cb\u4e86\u5417\uff1f','cta.desc':'\u53d1\u4e00\u5f20\u7167\u7247\u3001\u4e00\u4e2a\u94fe\u63a5\u6216\u4e00\u4e2a\u60f3\u6cd5\u7ed9\u6211\u3002\u6211\u5c06\u57282\u5c0f\u65f6\u5185\u56de\u590d\u3002',
     'cta.whatsapp':'\u5728 WhatsApp \u54a8\u8be2 \u2192','cta.email':'\u53d1\u9001\u90ae\u4ef6','cta.note':'\u4f60\u7684\u9690\u79c1\u4f1a\u5f97\u5230\u4fdd\u62a4\u3002\u7edd\u4e0d\u53d1\u9001\u5783\u573e\u90ae\u4ef6\u3002',
     'footer.brand':'\u4f60\u7684\u79c1\u4eba\u4ea7\u54c1\u730e\u4eba\u3002\u5728\u4e2d\u56fd\u5bfb\u627e\u65b0\u5947\u597d\u7269\uff0c\u68c0\u9a8c\u54c1\u8d28\uff0c\u4ece\u9999\u6e2f\u5bc4\u5230\u4f60\u5bb6\u95e8\u53e3\u3002',
-    'footer.nav':'\u5bfc\u822a','footer.n2':'\u597d\u7269','footer.n3':'\u4ef7\u683c','footer.n4':'\u5173\u4e8e',
+    'footer.nav':'\u5bfc\u822a','footer.n2':'\u597d\u7269','footer.n3':'\u4ef7\u683c','footer.n4':'\u5173\u4e8e','footer.n5':'\u6587\u7ae0',
     'footer.connect':'\u8054\u7cfb','footer.policies':'\u653f\u7b56',
     'footer.terms':'\u670d\u52a1\u6761\u6b3e','footer.refund':'\u9000\u6b3e\u653f\u7b56','footer.privacy':'\u9690\u79c1\u653f\u7b56',
     'footer.copy':'\u57fa\u4e8e\u9999\u6e2f\u7684\u4e2a\u4eba\u4ee3\u8d2d\u670d\u52a1\u3002','footer.tagline':'\u6bcf\u4ef6\u4ea7\u54c1\uff0c\u4eb2\u81ea\u628a\u5173\u3002'
