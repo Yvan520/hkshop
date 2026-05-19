@@ -1,5 +1,15 @@
 'use strict';
 var products = [
+  {id:'fishing-glasses',tags:['trending','new','outdoor'],thumbs:['https://img11.360buyimg.com/n1/jfs/t1/293483/7/9680/57998/68b6ebd6Fa647044a/092f2bd5cdd9245a.jpg','https://img11.360buyimg.com/n1/jfs/t1/333205/21/8040/168441/68b6eac3Fe831a947/dea2285d8acfa840.jpg','https://img11.360buyimg.com/n1/jfs/t1/328069/1/14813/148755/68b6eac2F443d3bdd/5a8726711ebdbf06.jpg'],
+    title:{en:'Polarized Fishing Sunglasses',zh:'\u9ad8\u6027\u80fd\u9493\u9c7c\u504f\u5149\u955c'},
+    price:{en:'Est. $16-30 USD',zh:'\u7ea6 \u00a5115\u2013215'},
+    desc:{en:'SHIMANO-grade polarized fishing sunglasses purpose-built for anglers. HD lens eliminates water surface glare, enhances float visibility, and blocks 100% UV. Ultra-light TR90 frame with adjustable nose pads. The cross-border TikTok trending essential for serious fishermen.',zh:'\u5c09\u6ce2\u7ea7\u504f\u5149\u9493\u9c7c\u955c\uff0cHD\u9ad8\u6e05\u504f\u5149\u7247\u5b8c\u7f8e\u6d88\u9664\u6c34\u9762\u53cd\u5149\uff0c\u770b\u6f02\u6e05\u6670\u3001\u9632\u7d2b\u5916\u7ebf\u3002TR90\u8d85\u8f7b\u6846\u67b6\u642d\u914d\u53ef\u8c03\u9f3b\u6241\uff0c\u957f\u65f6\u95f4\u4f69\u6234\u65e0\u538b\u529b\u3002TK\u8de8\u5883\u7206\u6b3e\uff0c\u9493\u9c7c\u7231\u597d\u8005\u5fc5\u5907\u3002'},
+    specs:[{l:{en:'Lens',zh:'\u955c\u7247'},v:{en:'HD Polarized TAC',zh:'HD\u504f\u5149TAC\u7247'}},{l:{en:'Frame',zh:'\u6846\u67b6'},v:{en:'TR90 Ultra-light',zh:'TR90\u8d85\u8f7b\u6750\u8d28'}},{l:{en:'UV Protection',zh:'\u9632\u7d2b\u5916\u7ebf'},v:{en:'100% UV400',zh:'100% UV400'}},{l:{en:'Nose Pad',zh:'\u9f3b\u6241'},v:{en:'Adjustable silicone',zh:'\u53ef\u8c03\u7845\u80f6\u9f3b\u6241'}},{l:{en:'Origin',zh:'\u4ea7\u5730'},v:{en:'Wenzhou, China',zh:'\u4e2d\u56fd\u6e29\u5dde'}}],featured:true},
+  {id:'star-projector',tags:['trending','bestseller','outdoor'],thumbs:['https://img11.360buyimg.com/n1/jfs/t20261117/353553/20/13901/1017364/691ab6f3Fbfae1f71/ebc50b0b9fcdeacb.png','https://img11.360buyimg.com/n1/jfs/t1/224629/28/35800/118626/67c90263F4e87c5b7/4441f9f0510e5d35.jpg','https://img11.360buyimg.com/n1/jfs/t1/229951/33/35651/90760/67d3cc88F8ca03a05/10a6ac878493f332.jpg'],
+    title:{en:'Aurora Star Projector',zh:'\u6781\u5149\u661f\u7a7a\u6295\u5f71\u706f'},
+    price:{en:'Est. $14-24 USD',zh:'\u7ea6 \u00a5100\u2013170'},
+    desc:{en:'16-color aurora borealis projector that transforms any room into a cosmic light show. RGB nebula effects with auto-rotation, remote control, and timer. Trending #1 on TikTok cross-border charts - immersive ambience for bedroom, parties, or relaxation. USB powered.',zh:'16\u8272\u6781\u5149\u6295\u5f71\u706f\uff0c\u628a\u4efb\u4f55\u623f\u95f4\u53d8\u6210\u592a\u7a7a\u5149\u5f71\u79c0\u3002RGB\u661f\u4e91\u6548\u679c\uff0c\u81ea\u52a8\u65cb\u8f6c\uff0c\u9065\u63a7\u63a7\u5236\uff0c\u5b9a\u65f6\u5173\u673a\u3002TikTok\u8de8\u5883\u7206\u6b3e\u7b2c\u4e00\u540d\uff0c\u67d4\u548c\u6781\u5149\u6c1b\u56f4\u611f\u6ee1\u6ee1\u3002USB\u4f9b\u7535\u3002'},
+    specs:[{l:{en:'Light Source',zh:'\u5149\u6e90'},v:{en:'LED RGB, 16 colors',zh:'LED RGB\u00b716\u8272'}},{l:{en:'Rotation',zh:'\u65cb\u8f6c'},v:{en:'Auto 360\u00b0',zh:'\u81ea\u52a8360\u00b0'}},{l:{en:'Control',zh:'\u63a7\u5236'},v:{en:'Remote + Button',zh:'\u9065\u63a7+\u6309\u94ae'}},{l:{en:'Power',zh:'\u4f9b\u7535'},v:{en:'USB 5V/2A',zh:'USB 5V/2A'}},{l:{en:'Origin',zh:'\u4ea7\u5730'},v:{en:'Shenzhen, China',zh:'\u4e2d\u56fd\u6df1\u5733'}}],featured:true},
   {id:'moon-lamp',tags:['trending','new'],thumbs:['https://img11.360buyimg.com/n1/jfs/t1/406277/34/15735/68807/69c16e8fFebdfc2e0/0083320320a2b532.jpg','https://img11.360buyimg.com/n1/jfs/t1/406886/3/12770/104618/69c16e2dFd0bb42ae/00835a05a093c84f.jpg','https://img11.360buyimg.com/n1/jfs/t1/408762/21/2832/194301/69c16e2fF076af8f4/00835a05a0b7de82.jpg'],
     title:{en:'Magnetic Levitation Moon Lamp',zh:'\u78c1\u60ac\u6d6e\u6708\u7403\u6c1b\u56f4\u706f'},
     price:{en:'Est. $28-42 USD',zh:'\u7ea6 \u00a5200\u2013300'},
@@ -78,8 +88,8 @@ var faqItems = [
   {q:{en:'Are you a registered business?',zh:'\u6709\u6ce8\u518c\u516c\u53f8\u5417\uff1f'},a:{en:'Yes, fully registered in Hong Kong. Invoices and receipts available.',zh:'\u6709\u7684\uff0c\u5728\u9999\u6e2f\u6b63\u5f0f\u6ce8\u518c\u8fd0\u8425\u3002\u53ef\u63d0\u4f9b\u6536\u636e\u548c\u53d1\u7968\u3002'}}
 ];
 
-var tags = ['all','new','trending','bestseller'];
-var tagLabels = {en:{all:'All',new:'New',trending:'Trending',bestseller:'Bestseller'},zh:{all:'\u5168\u90e8',new:'\u65b0\u54c1',trending:'\u70ed\u95e8',bestseller:'\u7545\u9500'}};
+var tags = ['all','new','trending','bestseller','outdoor'];
+var tagLabels = {en:{all:'All',new:'New',trending:'Trending',bestseller:'Bestseller',outdoor:'Outdoor'},zh:{all:'\u5168\u90e8',new:'\u65b0\u54c1',trending:'\u70ed\u95e8',bestseller:'\u7545\u9500',outdoor:'\u6237\u5916'}};
 
 var translations = {
   en: {
