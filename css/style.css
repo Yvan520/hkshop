@@ -114,8 +114,9 @@ nav.scrolled{background:rgba(250,247,242,0.96);border-color:var(--border-light);
 /* ===== FEATURED ===== */
 .featured-section{padding:0;background:var(--bg)}
 .featured-hero{display:grid;grid-template-columns:1.5fr 1fr;min-height:0}
-.featured-visual{display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:var(--bg-warm)}
-.featured-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 0.8s}
+.featured-visual{display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:var(--bg-warm);padding:20px}
+.featured-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(184,134,11,0.04),rgba(250,247,242,0.2));z-index:1;pointer-events:none;mix-blend-mode:soft-light}
+.featured-visual img{position:relative;width:100%;height:100%;object-fit:contain;transition:transform 0.8s;z-index:0}
 .featured-hero:hover .featured-visual img{transform:scale(1.03)}
 .featured-visual .sticker{position:absolute;top:24px;left:24px;background:var(--accent);color:#fff;font-size:0.62rem;font-weight:600;padding:6px 16px;border-radius:100px;letter-spacing:0.08em;text-transform:uppercase;z-index:2}
 .featured-panel{background:var(--bg-card);padding:56px 48px;display:flex;flex-direction:column;justify-content:center;box-shadow:-4px 0 48px rgba(0,0,0,0.04);position:relative}
@@ -143,9 +144,12 @@ nav.scrolled{background:rgba(250,247,242,0.96);border-color:var(--border-light);
 .prod-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:var(--border)}
 .prod-card.featured-card{grid-row:span 2}
 .prod-card.featured-card .prod-visual{height:420px}
-.prod-visual{height:230px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:var(--bg-warm)}
-.prod-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 0.7s}
-.prod-card:hover .prod-visual img{transform:scale(1.08)}
+.prod-card.featured-card .prod-visual::after{background:linear-gradient(135deg,rgba(184,134,11,0.04),rgba(250,247,242,0.2))}
+.prod-visual{height:230px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:var(--bg-warm);padding:14px}
+.prod-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(184,134,11,0.05),rgba(250,247,242,0.25));z-index:1;pointer-events:none;mix-blend-mode:soft-light}
+.prod-visual img{position:relative;width:100%;height:100%;object-fit:contain;transition:transform 0.7s;z-index:0}
+.prod-card:hover .prod-visual img{transform:scale(1.04)}
+.prod-visual .prod-badge{z-index:2}
 .prod-visual .prod-badge{position:absolute;top:12px;left:12px;font-size:0.6rem;font-weight:500;padding:3px 12px;border-radius:100px;background:rgba(255,255,255,0.9);color:var(--text-secondary);z-index:2;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
 .prod-card.featured-card .prod-visual .prod-badge{background:rgba(255,255,255,0.95);color:var(--accent);font-weight:600}
 .prod-info{padding:20px}
@@ -302,8 +306,9 @@ footer{padding:60px 32px 36px;background:var(--bg)}
 .modal-close:hover{color:var(--text);background:var(--border-light)}
 .modal-body{padding:36px 28px 56px}
 .modal-gallery{position:relative;margin-bottom:28px;border-radius:var(--radius-sm);overflow:hidden;background:var(--border-light)}
-.modal-gallery-main{width:100%;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;position:relative;background:var(--bg-warm)}
-.modal-gallery-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.modal-gallery-main{width:100%;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;position:relative;background:var(--bg-warm);padding:20px}
+.modal-gallery-main::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(184,134,11,0.04),rgba(250,247,242,0.2));z-index:1;pointer-events:none;mix-blend-mode:soft-light}
+.modal-gallery-main img{position:relative;width:100%;height:100%;object-fit:contain;z-index:0}
 .modal-gallery-nav{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;border:none;background:rgba(255,255,255,0.9);backdrop-filter:blur(8px);color:var(--text);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;transition:all 0.2s;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
 .modal-gallery-nav:hover{background:#fff;box-shadow:0 4px 16px rgba(0,0,0,0.1)}
 .modal-gallery-nav.prev{left:14px}.modal-gallery-nav.next{right:14px}
